@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <link href="style.css" rel="stylesheet" >
+        <script src="./index.js"></script>
+    </head>
+
+<body>
+    <nav class="navbar navbar_bg sticky-top navbar-expand-sm navbar-dark bg-dark ml-0 mr-0 mt-0 mb-0">
+        <div class="container-fluid full_size navbar_bg d-flex h-100 w-100 ml-0 mr-0 mt-0 mb-0">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img src="./images/kerala-tourism-title.png"
+                    width="25%" height="100%" alt="">
+                
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav ml-auto mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Experience Kerala</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./placestovisit.html">Where to go</a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Plan Your Trip</a>
+          </li>
+          
+           
+          </ul>
+    
+
+        <form>
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                 </div>
+                <input name="" class="form-control" placeholder="Username" type="text">
+            </div> <!-- form-group// -->
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                 </div>
+                <input name="" class="form-control" placeholder="Password" type="password">
+    
+                
+            </div> <!-- form-group// -->
+            <button type="submit" class="btn btn-info ml-1 mr-1">Login</button>
+                <button class="btn btn-info" onclick= "window.open('./signup.html')"> No Account? Sign Up</button>
+    
+        </form>    
+        </div>
+    </div> 
+
+    </nav>
+
+    <div class="container-fluid w-100">
+        <h1>
+        </h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+        <div class="col mb-4">
+            
+          <div class="card h-100" style="width:20rem">
+            <a class="card-block stretched-link text-decoration-none" href="./tvm.html">
+                <img src="./images/tvm1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Thiruvananthapuram</h5>
+            </a>      
+
+            <p class="card-text text-justify">The southern tip of God’s Own Country is home to the administrative 
+                  and cultural hub of the State, Thiruvananthapuram. From a landscape naturally endowed 
+                  with some of the most picturesque visuals possible <span id="dots13">...</span><span id="more13">along with culturally relevant holy 
+                  sites that have thrived for more than a thousand years, this area has something for everyone. 
+                  Young and old alike, all can experience their own slice of Kerala here, tailor-made to their 
+                  individual preference.</span>
+            </p>
+            <button onclick="myFunction13()" class="btn btn-info" id="myBtn13">Read more</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width:20rem">
+            <a class="card-block stretched-link text-decoration-none" href="./klm.html">
+  
+                <img src="/images/klm1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kollam</h5>
+            </a>
+
+                <p class="card-text text-justify">From Ibn Batuta to Marco Polo, legendary explorers have talked about the prominence 
+                  of Kollam district for centuries. Blessed with a long coastline, it is the de facto leader of the 
+                  cashew trade and processing industry in India. <span id="dots12">...</span><span id="more12">It is historically remembered as being among the most 
+                  important ports which were part of the legendary Spice Trade.
+                Over a third of its surface is covered by the great Ashtamudi Lake, 
+                the entrance to the renowned backwaters of Kerala.</span> 
+                
+                </p>
+                <button onclick="myFunction12()" class="btn btn-info" id="myBtn12">Read more</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width:20rem">
+            <a class="card-block stretched-link text-decoration-none" href="./ptm.html">
+
+                <img src="/images/ptm1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Pathanamthitta</h5>
+            </a>  
+              <p class="card-text text-justify">What you can do, when you are in the region of Pathanamthitta in Kerala?
+                Find your way to the quaint village of Aranmula, where metal mirrors are handicrafted and also
+                 a canoeing in River Pamba. Don’t miss the Vasthu Vidya Gurukulam, <span id="dots11">...</span><span id="more11">where the purest ancient 
+                 Indian School of architecture.  If you are an art lover, be here during the months of December - April, 
+                 to witness the iconic Padayani festival. If you love adventure, then go for a coracle ride at 
+                 Angamoozhy and Adavi. Pathanamthitta awaits you, Welcome travel hearts.</span> 
+                
+                </p>
+                <button onclick="myFunction11()" class="btn btn-info" id="myBtn11">Read more</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width:20rem">
+            <a class="card-block stretched-link text-decoration-none" href="./alp.html">
+
+                <img src="/images/alp1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Alappuzha</h5>
+            </a>  
+                <p class="card-text text-justify">Referred to as the Venice of the East, Alappuzha has always enjoyed an important place 
+                  in the maritime history of Kerala. Today, it is famous for its boat races, backwater holidays, beaches, 
+                  marine products and coir industry. Alappuzha Beach is a <span id="dots10">...</span><span id="more10">popular picnic spot. The pier, which extends out 
+                  to the sea here, is over 137 years old. Entertainment facilities at the Vijaya Beach Park add to the 
+                  attraction of the beach.Another delightful experience while in Alappuzha is the houseboat cruise. The houseboats you find in the
+                 backwaters of Alappuzha are in fact a reworked version of the Kettuvallams of olden times.</span> </p>
+                 <button onclick="myFunction10()" class="btn btn-info" id="myBtn10">Read more</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width:20rem">
+            <a class="card-block stretched-link text-decoration-none" href="./ktm.html">
+
+                <img src="/images/ktym1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Kottayam</h5>
+            </a>  
+                <p class="card-text text-justify">Kottayam district is famous for its rich heritage and literary tradition. 
+                    It is renowned for its spice and rubber trade. Cradled by the backwaters and the Western Ghats, it is 
+                    epitomised by its stretches of vast greenery, <span id="dots9">...</span><span id="more9">paddy fields and huge rubber plantations. Over five of the 
+                    State’s leading newspaper publications originate from Kottayam. About four-fifth of books published in the 
+                    tate come from here as well. From trekking hotbeds like Nadukani and Kottathavalam to the rare avian life 
+                    on display at the Kumarakom Bird Sanctuary, this district encompasses everything that God’s Own Country is 
+                    famous for. Well connected to the entire State, it is full of interesting historical and cultural locations 
+                    that tell the tale of how the district was forged into its current form.</span>
+                </p>
+                <button onclick="myFunction9()" class="btn btn-info" id="myBtn9">Read more</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width:20rem">
+            
+          <a class="card-block stretched-link text-decoration-none" href="#">
+  
+            <img src="/images/idk1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Idukki</h5>
+            </a>
+            <p class="card-text text-justify">Idukki is Kerala's second largest district and has been blessed with numerous natural 
+                  wonders. The high valleys and hill ranges of this landlocked region are fed by three major rivers - Periyar, 
+                  Thalayar and Thodupuzhayar and their tributaries. <span id="dots8">...</span><span id="more8">Its forest still hosts many tribes and over half of the 
+                  terrain is still covered with forests. People love going to the gigantic arch dam for getting its mesmerising 
+                  view. Blessed with a wide range of trekking trail, each of them offers a spectacular view of the valley 
+                  below and ranges above of Idukki. The place is also renowned for its exotic flora and fauna and one can 
+                  come across many rare species while visiting Idukki.</span>
+            </p>
+            <button onclick="myFunction8()" class="btn btn-info" id="myBtn8">Read more</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width:20rem">
+        <a class="card-block stretched-link text-decoration-none" href="#">
+
+            <img src="/images/ekm1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ernakulam</h5>
+        </a>  
+              <p class="card-text text-justify">Kochi represents different things to different people. To many, it is an emerging cosmopolitan 
+                  city with bustling life in the streets, the cinema halls, the shopping malls, and the skyscrapers; the commercial
+                   capital of the state, with a style statement different from the <span id="dots7">...</span><span id="more7">rest of the State - whether in clothes or lifestyle.
+                    To some others, Kochi is a place with deep roots in history and its streets exude an old-world charm; 
+                    a place with beautiful monuments and a variety of linguistic and ethnic communities including Jews, Konkinis, 
+                    Gujaratis and so on. Yet another group looks at Kochi as a thriving, expanding market, providing opportunities 
+                    for growth and prosperity to all who knock at her doors. </span></p>
+                    <button onclick="myFunction7()" class="btn btn-info" id="myBtn7">Read more</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width:20rem">
+           <a class="card-block stretched-link text-decoration-none" href="#">
+  
+                <img src="/images/tsr1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Thrissur</h5>
+            </a>  
+                <p class="card-text text-justify">The cultural capital of Kerala, the Poorams or temple festivals in Thrissur draw in thousands
+                   of people every single year as these carnivals encapsulate every single part of Kerala's rich heritage. 
+                   These are a hotbed of folk art performances and heritage tours <span id="dots6">...</span><span id="more6">that will give you an in depth look into some 
+                   of the grandest traditions of the State. From majestic elephants to colourful pulikali processions to the world
+                    renowned Thrissur Pooram, there is always a festive atmosphere in the air. The district is also the abode of 
+                    several cultural centres like Kerala Kalamandalam, Sahitya Academy and the Sangeetha Nataka Academy. Thrissur 
+                    is a place one must visit at least once in their lifetime.</span></p>
+                    <button onclick="myFunction6()" class="btn btn-info" id="myBtn6">Read more</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width:20rem">
+        <a class="card-block stretched-link text-decoration-none" href="#">
+   
+            <img src="/images/plkd1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Palakkad</h5>
+        </a>
+              <p class="card-text text-justify">Celebrated as the Granary of Kerala, Palakkad is a vast stretch of fertile plains 
+                  interspersed with hills, rivers, mountain streams and forests. The gateway to Kerala from the north, a 40 kilometre 
+                  break in the mountains known as the Palakkad Gap gives access <span id="dots5">...</span><span id="more5">to this land situated at the foot of the Western Ghats. 
+                  The pass acts as a corridor between Kerala and the neighbouring Tamil Nadu and played a key role in the trade
+                   relations between the east and west coasts of peninsular India. Deriving its name from the Malayalam words Pala 
+                   (Alsteriascholaris) and Kadu (forest), this place was once a stunning expanse of forest covered with the 
+                   sweet-scented flowers of the Pala tree.</span> </p>
+                   <button onclick="myFunction5()" class="btn btn-info" id="myBtn5">Read more</button>
+    
+                </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width:20rem">
+        <a class="card-block stretched-link text-decoration-none" href="#">
+  
+            <img src="/images/mlprm1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Malappuram</h5>
+        </a>      
+              <p class="card-text text-justify">Malappuram district has a rich and vibrant history. The military headquarters of the Zamorins of 
+                  Kozhikode since ancient times, this district was the site for many of the Mappila Revolts (uprising against the 
+                  British East India Company in Kerala) between 1792 and 1921. <span id="dots4">...</span><span id="more4">Malappuram literally means a land atop hills and the 
+                  region is enriched by three great rivers flowing through it - the Chaliyar, Kadalundi and the Bharathapuzha. 
+                  Malappuram has made numerous contributions to the cultural heritage of Kerala. A famous centre for Hindu-Vedic
+                   learning and Islamic philosophy, the temples and mosques of this region are well known for their spectacular 
+                   festivals.Along with historic monuments and diverse natural attractions, a range of cultural and ritual 
+                   art forms add to its charm as a destination.</span></p>
+                </p>
+                <button onclick="myFunction4()" class="btn btn-info" id="myBtn4">Read more</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card h-100" style="width:20rem">
+            <a class="card-block stretched-link text-decoration-none" href="#">
+    
+              <img src="/images/koz1.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kozhikode</h5>
+            </a>        
+                <p class="card-text text-justify ">The legendary seaport where Arab, Chinese and East African traders once converged, 
+                    Kozhikode was previously the most crucial region of the Malabar Coast. Vasco da Gama landed on its shores in 1498, 
+                    shooting the region to global fame. Once the capital of the <span id="dots3">...</span><span id="more3">influential Zamorins and a prominent trade and commerce 
+                    centre, the winds of change have swept over this charming coastal land. The whiff of history continues to permeate 
+                    the lanes, bazaars and business hubs of Kozhikode. Lush green countryside, serene beaches, historic sites, wildlife 
+                    sanctuaries, rivers and hills make Kozhikode a popular destination.</span></p>
+                    <button onclick="myFunction3()" class="btn btn-info" id="myBtn3">Read more</button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100" style="width:20rem">
+            <a class="card-block stretched-link text-decoration-none" href="#">
+    
+              <img src="/images/way1.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Wayanad</h5>
+            </a>    
+                <p class="card-text text-justify">Adorning the northern hills of Kerala is the beautiful district of Wayanad, 
+                    maintained by the District Tourism Promotion Council, Wayanad.  This area is famous for its large amount of 
+                    camping and trekking trails, breathtaking waterfalls, <span id="dots2">...</span><span id="more2">caves, bird-watching sites, flora, fauna and an overall 
+                    plethora of magnificent sights. This area has been a tourist favourite over the years. People are especially 
+                    delighted by the range of exotic products including spices, coffee, tea, bamboo products, honey and herbal plants 
+                    available here.  Kanthanpara Waterfalls is one hotspot in Wayanad that allures tourists from all over the world. 
+                    Apart from these magnificent falls, Wayanad calls you to experience the stunning beauty of Karapuzha Dam, Pookode 
+                    & Karlad Lake as well. If you are an adventure seeker, then Cheengari Rock Adventure Center is a must-visit place 
+                    for you. Another must-visit place in Wayanad is the Edakkal Caves. The caves are two natural rock formations 
+                    believed to have been formed by a large split in a huge rock. The carvings inside are extremely beautiful.</span></p>
+                    <button onclick="myFunction2()" class="btn btn-info" id="myBtn2">Read more</button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100" style="width:20rem">
+            <a class="card-block stretched-link text-decoration-none" href="#">
+    
+              <img src="/images/kan1.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kannur</h5>
+              </a>
+                <p class="card-text text-justify">Kannur is most renowned for the Theyyam performances in its temples. 
+                    This magnificent art form plays an integral part in the culture of this Northern Kerala district. 
+                    Formerly known as Cannanore, Marco Polo christened it a <span id="dots1">...</span><span id="more1">'Great Emporium Of Spice Trade'. Kannur has, 
+                    since time immemorial, been hailed as an influential sea port. Legend has it that it had interactions and 
+                    trade relations with the rest of the world since the time of King Solomon to the Greeks, Arabs and Romans. 
+                    It has a plethora of forts, temples, beaches and wildlife sanctuaries that regularly attract visitors. 
+                    Major festivals and events are held throughout the year and this is among the best places in Kerala to 
+                    spend your vacation in.</span></p>
+                    <button onclick="myFunction1()" class="btn btn-info" id="myBtn1">Read more</button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100" style="width:20rem">
+             <a class="card-block stretched-link text-decoration-none" href="#">
+
+                <img src="/images/kasr1.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kasargod</h5>
+              </a>
+                <p class="card-text text-justify">The northernmost district of Kerala, Kasaragod is renowned for its hills, forts 
+                    and water bodies. The coir and handloom industry here are extremely famous around the world. The place is also 
+                    popular for its ancient temples and rich biodiversity. <span id="dots">...</span><span id="more">It is an important border district as well that regulates 
+                    trade with a lot of neighbouring States. Legends regarding the district greet you at every turn on a visit here. 
+                    A trip here is incomplete without visiting Bekal Fort, the most majestic and well maintained fort in South India.</span></p>
+                    <button onclick="myFunction()" class="btn btn-info" id="myBtn">Read more</button>
+    
+                </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100" style="width:20rem">
+             <a class="card-block stretched-link text-decoration-none" href="#">
+
+                <img src="/images/culture.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Culture</h5>
+              </a>
+                <p class="card-text text-justify">Lying in the southwestern tip of India, the green strip of Kerala sandwiched between the Western Ghats and the Arabian Sea is unique and stands apart from the rest of the states in the country.
+                    <span id="dots14">...</span><span id="more14">Kerala's history is ancient, has centuries-old foreign trade links and a long tradition in art and literature. With a very high literacy rate, Kerala is at the forefront in setting high standards in social justice, gender equality, health and education in the country.
+
+                        An epitome of religious harmony, it was through Kerala that Christianity and Islam made its entry to India. And not just that! The country's first church and mosque are located in Kodungallur in central Kerala.
+                        
+                        Kerala is the spice garden of the world. Earlier, traders from far flung lands reached Kerala in search of the spices. Later, European powers followed this spice route to reach Kerala.
+                        
+                        Enriched by Nature and abundance of water, Kerala can be reckoned as the land of rains. Its lifelines are the two rainy seasons of Idavappaathi and Thulavarsham.
+                        
+                        Let us set out on a voyage through the history and culture of this land that is inimitable. A journey replete with vibrant colours, flavours and music …. It will unravel to us the mysteries of Kerala.</span></p>
+                    <button onclick="myFunction14()" class="btn btn-info" id="myBtn14">Read more</button>
+    
+                </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100" style="width:20rem">
+             <a class="card-block stretched-link text-decoration-none" href="#">
+
+                <img src="/images/cuisine.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cuisine</h5>
+              </a>
+                <p class="card-text text-justify">The staple food of Kerala is greatly influenced by the history and culture of the state. It’s a blend of both vegetarian and non-vegetarian options, in which the latter is prepared a variety of items like fish, poultry and red meat. Rice, fish, and coconut are the most common ingredients of almost all Kerala famous food. 
+                    <span id="dots15">...</span><span id="more15">Though the traditional food of Kerala, including Kerala Sadya prepared during festivals and celebratory ceremonies, is vegetarian, the contemporary food of the state includes non-vegetarian dishes. One might also be able to identify the taste of coconut in most dishes in Kerala, owing to the fact that blending grated coconut and its milk in food for thickening and flavouring is a common culinary practice in India.
+
+                        So, for all those who think Kerala food is all about idlis and dosas, you’re in for a surprise! Our Kerala food items list and Kerala food photos will definitely grab your attention. Come over to this charming coastal town and indulge in the best gastronomic experiences that probably won’t let you leave!
+                    </span></p>
+                    <button onclick="myFunction15()" class="btn btn-info" id="myBtn15">Read more</button>
+    
+                </div>
+            </div>
+          </div>
+      </div>
+        
+        
+          
+                
+        
+      </div>
+      <!-- /.container -->
+      <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 item">
+                        <h3>Explore</h3>
+                        <ul>
+                            <li><a href="#">Media Room</a></li>
+                            <li><a href="#">Tourism Events</a></li>
+                            <li><a href="#">Maps</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 item">
+                        <h3>Travel Hub</h3>
+                        <ul>
+                            <li><a href="#">Kerala at a Glance</a></li>
+                            <li><a href="#">Travel Tips</a></li>
+                            <li><a href="#">Where To Stay?</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 item">
+                        <h3>Nature</h3>
+                        <ul>
+                            <li><a href="#">Hills</a></li>
+                            <li><a href="#">Backwaters</a></li>
+                            <li><a href="#">Beaches</a></li>
+                           
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Specialities</h3>
+                        <ul>
+
+                            <li><a href="#">Ayurveda</a></li>
+                            <li><a href="#">Monsoon</a></li>
+                            <li><a href="#">Houseboat</a></li>
+                        </ul>
+                        
+                    </div>
+                </br>
+            </br>
+                    <div class="col item social mt-5"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-youtube"></i></a><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-google"></i></a></div>
+                </div>
+                <p class="copyright">Kerala Tourism Development Corporation © 2022</p>
+            </div>
+        </footer>  
+</body>
+</html>
