@@ -13,7 +13,7 @@
 
         <link href="style.css" rel="stylesheet" >
         <title>Kerala, God's Own Country!</title>
-        <script src="./form.js"></script>
+ 
         <style>
         /* Make the image fully responsive */
         .carousel-inner img {
@@ -38,7 +38,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav ml-auto mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#">Experience Kerala</a>
@@ -54,34 +54,10 @@
           </ul>
     
 
-        <form name="form1" id="form1" action="./signedin.html" onsubmit = "return ValidateLogin()"> 
-          <span class="mt-0" id="email1_error"></span>
-
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                 </div>
-
-                <input name="" id="email1" class="form-control" placeholder="email" type="email" onkeyup="ValidateEmail()" required> 
-
-            </div> <!-- form-group// -->
-            <span class="mt-0" id="pass1_error_Login"></span>
-
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                 </div>
-
-                <input name="" id="pass1" class="form-control" placeholder="Password" type="password" onkeyup="ValidatePwd_Login()" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 to 15  characters" required>
 
                 
-            </div> <!-- form-group// -->
-            <input type="submit" class="btn btn-info ml-1 mr-1" value = "Login">
-                <button class="btn btn-info" onclick= "window.open('./signup.html')"> No Account? Sign Up</button>
+            <button type="submit" class="btn btn-info ml-1 mr-1">Logout</button>
     
-        </form>    
-
-          
         </div>
     </div> 
 

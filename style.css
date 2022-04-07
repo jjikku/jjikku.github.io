@@ -31,6 +31,7 @@
  
    }*/
 
+
   .navbar_bg {
     /* The image used */
     background-image: url("./images/navbar_bg.jpg");
@@ -42,6 +43,7 @@
   
     /* Needed to position the navbar */
     position: relative;
+    
   }
   
   .card {
@@ -139,3 +141,47 @@
     font-size: 13px;
     margin-bottom: 0
 }
+
+#email1_error {
+    display: block;
+    color: red;
+    margin: 5px 0 0 0;
+    font-size: small;
+  }
+
+  #phone1_error {
+    display: block;
+    color: red;
+    margin: 5px 0 0 0;
+    font-size: small;
+  }
+
+  #pass1_error {
+    display: block;
+    color: red;
+    margin: 5px 0 0 0;
+    font-size: small;
+  }
+
+  #pass1_error_Login {
+    display: block;
+    color: red;
+    margin: 5px 0 0 0;
+    font-size: small;
+    max-width: 240px;
+  }
+
+  #pass2_error {
+    display: block;
+    color: red;
+    margin: 5px 0 0 0;
+    font-size: small;
+  }
+
+  .progress-bar {
+    border-radius: 5px;
+    height: 12px;
+    margin-bottom: 8px;
+    transition: width 2s;
+
+  }
