@@ -214,7 +214,6 @@ function ValidateLogin()
     if(email_b && pass1_b )
     {
         return true;
-
     }
     else
     {
@@ -238,10 +237,8 @@ var el = document.getElementById("form1");
 
 //     el.addEventListener('submit', function(event) {
 //         //window.addEventListener("beforeunload", () => { debugger }, false);
-
 //         event.preventDefault();
 //         //event.stopImmediatePropagation();
-
 //         //alert("default prevented");
 //     });
   }
