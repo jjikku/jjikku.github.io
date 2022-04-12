@@ -1,3 +1,24 @@
+function ValidateName()
+{
+    console.log ("Validating Name");    
+    var name1 = document.getElementById("name1");
+    //var setmb = document.getElementsByClassName("setmb0");
+    console.log(name1.value);
+    if(name1.value.trim() != "")
+    {
+        console.log("match");
+        name1_error.textContent = "";
+        return true;
+    }
+    else
+    {
+        console.log("not matched") ;
+        name1.style.marginBottom = 0 + "px";
+        name1_error.textContent = "Name cannot be empty";       
+        document.form2.name1.focus();
+        return false;
+    }
+}
 
 function ValidateEmail()
 {
@@ -5,8 +26,8 @@ function ValidateEmail()
     var email1 = document.getElementById("email1");
     //var setmb = document.getElementsByClassName("setmb0");
     console.log(email1.value);
-    var mailformat = /^([\w\-\.]+)@([\w\-]+)\.([a-z]{2,3}(\.[a-z]{2,3})?)$/;
-    if(email1.value.match(mailformat))
+    var mailformat = /^([\w\-\.]+)@([A-Za-z\-]+)\.([a-z]{2,3}(\.[a-z]{2,3})?)$/;
+    if(email1.value.trim().match(mailformat))
     {
         console.log("match");
         email1_error.textContent = "";
@@ -18,7 +39,18 @@ function ValidateEmail()
         email1.style.marginBottom = 0 + "px";
         email1_error.textContent = "eg: myname@email.com / my-name@email.co.in";
         //email1.setCustomValidity("Eg:myname@email.com/my-name@email.co.in");
-        document.form1.email1.focus();
+        var frm1 = document.getElementById("form1");
+        if(frm1)
+        {
+            document.form1.email1.focus();
+
+        } 
+        else
+        {
+            document.form2.email1.focus();
+
+        }
+
         return false;
     }
 }
@@ -41,7 +73,7 @@ function ValidatePhone()
         phone1_error.textContent = "Only numbers are allowed. Should contain 10 digits.";
 
         //email1.setCustomValidity("Eg:myname@email.com/my-name@email.co.in");
-        document.form1.phone1.focus();
+        document.form2.phone1.focus();
         return false;
     }
 }
@@ -136,15 +168,17 @@ function ChkStrength(password) {
       {
           console.log("match");
           pass1_error.textContent = "";
+          $("#pass2").prop("disabled",false);
           return true;
       }
           else
       {
           console.log("not matched") ;
           pass1_error.textContent = "Should Contain atleast a special character, Capital letter,small letter and number. Minimum 8 characters ";
-  
+          $("#pass2").prop("disabled",true);
+
           //email1.setCustomValidity("Eg:myname@email.com/my-name@email.co.in");
-          document.form1.pass1.focus();
+          document.form2.pass1.focus();
           return false;
       }
   }
@@ -164,7 +198,7 @@ function ComparePwd (){
     if(pass1.value != pass2.value)
     {
         pass2_error.textContent = "Passwords don't match ";
-        document.form1.pass2.focus();
+        document.form2.pass2.focus();
 
         return false;
 
@@ -183,14 +217,15 @@ function Validate()
 {
 
     console.log("function called");
+    var name1_b = ValidateName();
     var email_b = ValidateEmail();
     var phone_b = ValidatePhone();
     var pass1_b = ValidatePwd();
     var pass2_b = ComparePwd();
     resetStrength();
-    console.log(email_b,phone_b, pass1_b, pass2_b);
+    console.log(name1_b, email_b,phone_b, pass1_b, pass2_b);
 
-    if(email_b && phone_b && pass1_b && pass2_b)
+    if(name1_b && email_b && phone_b && pass1_b && pass2_b)
     {
         return true;
 
@@ -221,6 +256,31 @@ function ValidateLogin()
     }
     
 }
+$(document).ready(function() {
+    $('#form1').submit(function(e){
+        
+        console.log("submit clicked");
+        
+        var valid1 = ValidateLogin();
+        if(!valid1) {
+          e.preventDefault();
+          //return false;
+        }
+      });
+      //document.getElementById("pass2").setAttribute("disabled");
+      $("#pass2").prop("disabled",true);
+
+      $('#form2').submit(function(e){
+        
+        console.log("submit signup clicked");
+        
+        var valid2 = Validate();
+        if(!valid2) {
+          e.preventDefault();
+          //return false;
+        }
+      });
+    });
 
 //  window.onload = function() {
 //     ValidateEmail();

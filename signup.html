@@ -71,12 +71,14 @@
             </p>
 
 
-            <form name="form1" id="form1" action="./index.html" onsubmit="return Validate()"> 
+            <form name="form2" id="form2" action="./index.html"> <!--</form> onsubmit="return Validate()"> -->
+            <span class="mt-0" id="name1_error"></span>
+
             <div class="form-group input-group">
                 <div class="input-group-prepend">
                     <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                  </div>
-                <input name="" class="form-control" placeholder="Full name" type="text" required>
+                <input name="name1" id="name1" class="form-control" placeholder="Full name" type="text" onkeyup="ValidateName()" required>
             </div> <!-- form-group// -->
             <span class="mt-0" id="email1_error"></span>
 
@@ -119,7 +121,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                 </div>
-                <input  name = "pass2" id="pass2" class="form-control" placeholder="Repeat password" type="password" onclick="resetStrength()" onkeyup="ComparePwd()" required>
+                <input name = "pass2" id="pass2" class="form-control" placeholder="Repeat password" type="password" onclick="resetStrength()" onkeyup="ComparePwd()" required>
             </div> <!-- form-group// -->                                      
             <div class="form-group">
                 <input type="submit" class="btn btn-primary btn-block" value="Create Account">

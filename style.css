@@ -178,6 +178,14 @@
     font-size: small;
   }
 
+  #name1_error {
+    display: block;
+    color: red;
+    margin: 5px 0 0 0;
+    font-size: small;
+  }
+
+
   .progress-bar {
     border-radius: 5px;
     height: 12px;
