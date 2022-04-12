@@ -61,7 +61,7 @@ function ValidatePhone()
     var phone1 = document.getElementById("phone1");
     console.log(phone1.value);
     var phoneformat = /^([0-9]{3})([^\S\t\n\r]|[\.-])?([0-9]{3})([\.-])?([^\S\t\n\r]|[\.-])?([0-9]{4})$/;
-    if(phone1.value.match(phoneformat))
+    if(phone1.value.trim().match(phoneformat))
     {
         console.log("match");
         phone1_error.textContent = "";
@@ -139,7 +139,7 @@ function ChkStrength(password) {
   
       console.log(pass1.value);
       var passformat = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])[\w!@#$%^&*]{8,}$/;
-      if(pass1.value.match(passformat))
+      if(pass1.value.trim().match(passformat))
       {
           console.log("match");
           pass1_error_Login.textContent = "";
@@ -164,7 +164,7 @@ function ChkStrength(password) {
   
       console.log(pass1.value);
       var passformat = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])[\w!@#$%^&*]{8,}$/;
-      if(pass1.value.match(passformat))
+      if(pass1.value.trim().match(passformat))
       {
           console.log("match");
           pass1_error.textContent = "";
@@ -288,20 +288,20 @@ $(document).ready(function() {
 //     ValidatePwd();
 
 //   };
-var el = document.getElementById("form1");
+//var el = document.getElementById("form1");
 
 
-  if(el)
-  {
-    el.onsubmit = function(e) { e.preventDefault(); };
+//   if(el)
+//   {
+//     el.onsubmit = function(e) { e.preventDefault(); };
 
-//     el.addEventListener('submit', function(event) {
-//         //window.addEventListener("beforeunload", () => { debugger }, false);
-//         event.preventDefault();
-//         //event.stopImmediatePropagation();
-//         //alert("default prevented");
-//     });
-  }
+// //     el.addEventListener('submit', function(event) {
+// //         //window.addEventListener("beforeunload", () => { debugger }, false);
+// //         event.preventDefault();
+// //         //event.stopImmediatePropagation();
+// //         //alert("default prevented");
+// //     });
+//   }
   
 
     
