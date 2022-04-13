@@ -60,7 +60,7 @@ function ValidatePhone()
 {
     var phone1 = document.getElementById("phone1");
     console.log(phone1.value);
-    var phoneformat = /^([0-9]{3})([^\S\t\n\r]|[\.-])?([0-9]{3})([\.-])?([^\S\t\n\r]|[\.-])?([0-9]{4})$/;
+    var phoneformat = /^([0-9]{3})([^\S\t\n\r]|[\.-])?([0-9]{3})([^\S\t\n\r]|[\.-])?([0-9]{4})$/;
     if(phone1.value.trim().match(phoneformat))
     {
         console.log("match");
